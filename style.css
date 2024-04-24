@@ -5,9 +5,10 @@ body {
     background-image: repeating-linear-gradient(to top,rgb(205, 149, 233), rgb(131, 172, 209), rgb(14, 202, 152));
 }
 #toggleBtn {
-    position: fixed;
+    display: none;
+    position: absolute;
     top: 10px;
-    left: 10px;
+    left: 235px;
     background-color: #081e8b; /* Cor de fundo do botão */
     color: #fff;
     border: none;
@@ -23,15 +24,23 @@ body {
     width: 250px;
     position: fixed;
     top: 0;
-    left: -250px;
+    left: 0px;
     height: 100vh;
     padding-top: 50px; /* Espaçamento para evitar que os itens fiquem sob o cabeçalho */
     z-index: 1000;
-}
-.sidebar.open {
-    left: 0; /* Mostra o sidebar */
+    transition: transform 1.8s ease;
 }
 
+
+
+
+#nametitle{
+    margin-top: -30px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    font-size: medium;
+    
+}
 .sidebar ul {
     list-style: none;
     padding: 0;
@@ -132,7 +141,7 @@ footer ul {
 }
 
 footer ul li {
-    margin-right: 100px; /* Adiciona um espaçamento entre os itens */
+    margin-right: 10px; /* Adiciona um espaçamento entre os itens */
     padding: 10px;
     border-radius: 15px;
     border: 2px solid #ffffff;
@@ -158,10 +167,7 @@ li:hover{
     margin-top: 10px;
 }
 
-/* Estilo para o ícone do botão de abrir/fechar o sidebar */
-#open_btn_icon {
-    transform: rotate(180deg); /* Ícone inicialmente virado para a direita */
-}
+
 /* Responsividade para telas menores */
 @media only screen and (max-width: 600px) {
     .sidebar ul {
@@ -197,12 +203,38 @@ li:hover{
     footer ul li {
         margin-right: 30px; /* Aumenta a margem direita entre os itens */
         margin-bottom: 12px; /* Aumenta a margem inferior entre os itens */
-        padding: 0px;
+        padding: 10px;
         border: none;
         font-size: smaller;
         margin-inline-start: 12px;
+        border: 2px solid #ffffff;
     }
-    
+    #toggleBtn{
+        display: flex;
+        
+    }
+    .sidebar #open_btn_icon{
+        transform: rotate(-180deg);
+    }
+    .sidebar.open #open_btn_icon{
+        transform: none;
+    }
+    .sidebar.open {
+        
+        transition: transform 1.8s ease;
+        left: -235px; /* Mostra o sidebar */
+    }
+    #open_btn_icon {
+        transition: transform 0.8s ease;
+        
+    }
+    #nametitle{
+        margin-top: 0px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+        font-size: medium;
+        
+    }
 }
 
 
