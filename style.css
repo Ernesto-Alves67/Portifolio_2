@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: repeating-linear-gradient(to top,rgb(205, 149, 233), rgb(131, 172, 209), rgb(14, 202, 152));
+}
+#toggleBtn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #081e8b; /* Cor de fundo do botão */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 9999; /* Garante que o botão fique acima do sidebar */
+    padding: 10px; /* Adiciona preenchimento interno ao botão */
+    border-radius: 50%; /* Torna o botão circular */
+    transition: background-color 0.3s; /* Adiciona uma transição suave para a cor de fundo */
+}
+.sidebar {
+    background-image: linear-gradient(to right,#290b47, #453fc3);;
+    color: #fff;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    padding-top: 50px; /* Espaçamento para evitar que os itens fiquem sob o cabeçalho */
+    z-index: 1000;
+}
+.sidebar.open {
+    left: 0; /* Mostra o sidebar */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar img {
+    width: 210px;
+    height: 210px;
+    margin-left: 20px;
+    margin-top: -40px;
+    border-radius: 50px;
+}
+
+.sidebar ul li {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+header {
+    background-image: linear-gradient(to right,#290b47, #453fc3);
+    padding: 10px;
+    text-align: center;
+    margin-left: 250px; 
+    border-radius: 0px 0px 18px 18px;
+    color: #fff;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center; /* Centraliza os itens */
+}
+
+header nav ul li {
+    display: inline; /* Exibe os itens na mesma linha */
+    margin: 0 10px; /* Adiciona espaço entre os itens */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+
+div {
+    border: 2px solid #290b47;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+div p {
+    align-items: center;
+    margin-left: 50px;
+}
+h2{
+    margin-left: 5px;
+    text-decoration: underline;
+}
+h3{
+    margin-left: 10px;
+}
+
+.content {
+    padding: 20px;
+}
+section.content, footer {
+    margin-left: 250px;
+    margin-bottom: -14px;
+}
+footer {
+    border-radius: 18px 18px 0px 0px ;
+    margin-left: 250px; /* Ajusta a margem esquerda para garantir que o conteúdo comece após o término do sidebar */
+    padding: 20px;
+    background-image: linear-gradient(to right,#290b47, #453fc3);
+    color: #fff;
+    display: flex; /* Adiciona display flex para alinhar itens horizontalmente */
+    justify-content: center; /* Centraliza horizontalmente os itens */
+    align-items: center; /* Centraliza verticalmente os itens */
+    height: 50px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remova qualquer margem padrão */
+    display: flex; /* Adiciona display flex para alinhar itens horizontalmente */
+}
+
+footer ul li {
+    margin-right: 100px; /* Adiciona um espaçamento entre os itens */
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid #ffffff;
+}
+
+footer ul li:last-child {
+    margin-right: 0; /* Remove a margem direita do último item */
+}
+
+
+ul {
+    list-style-type: none;
+    
+}
+
+li:hover{
+    background-color: #ffffff77;
+    cursor: pointer;
+    
+}
+
+.contact {
+    margin-top: 10px;
+}
+
+/* Estilo para o ícone do botão de abrir/fechar o sidebar */
+#open_btn_icon {
+    transform: rotate(180deg); /* Ícone inicialmente virado para a direita */
+}
+/* Responsividade para telas menores */
+@media only screen and (max-width: 600px) {
+    .sidebar ul {
+        display: flex; /* Altera o display para flex para alinhar os itens horizontalmente */
+        flex-direction: column; /* Muda a direção da flexbox para coluna para que os itens sejam empilhados verticalmente */
+        align-items: center; /* Centraliza os itens horizontalmente */
+    }
+
+    .sidebar ul li {
+        width: auto; /* Define a largura automática para que os itens ocupem apenas a largura do conteúdo */
+        margin: 10px 0; /* Adiciona margem entre os itens */
+        margin-bottom: 50px;
+    }
+
+    .sidebar img {
+        margin: 0 auto; /* Centraliza a imagem horizontalmente */
+        display: block; /* Garante que a imagem não seja esticada */
+    }
+
+    header {
+        margin-left: 20px; /* Remove a margem esquerda */
+        margin-right: 20px;
+    }
+
+    section.content, footer {
+        margin-left: 0; /* Remove a margem esquerda */
+    }
+
+    footer ul {
+        justify-content: space-around; /* Distribui os itens igualmente ao longo do espaço disponível */
+    }
+
+    footer ul li {
+        margin-right: 30px; /* Aumenta a margem direita entre os itens */
+        margin-bottom: 12px; /* Aumenta a margem inferior entre os itens */
+        padding: 0px;
+        border: none;
+        font-size: smaller;
+        margin-inline-start: 12px;
+    }
+    
+}
+
+
