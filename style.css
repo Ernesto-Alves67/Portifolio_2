@@ -1,50 +1,64 @@
+:root {
+    --corduroy-50: #f6f7f7;
+    --corduroy-100: #e0e7e2;
+    --corduroy-200: #c1cec6;
+    --corduroy-300: #9bada4;
+    --corduroy-400: #758c81;
+    --corduroy-500: #5e756a;
+    --corduroy-600: #475a51;
+    --corduroy-700: #3c4943;
+    --corduroy-800: #323d38;
+    --corduroy-900: #2d3431;
+    --corduroy-950: #171c1a;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: repeating-linear-gradient(to top,rgb(205, 149, 233), rgb(131, 172, 209), rgb(14, 202, 152));
+    background-image: repeating-linear-gradient(to top, var(--corduroy-200), var(--corduroy-400), var(--corduroy-600));
 }
+
 #toggleBtn {
     display: none;
     position: absolute;
     top: 10px;
     left: 235px;
-    background-color: #081e8b; /* Cor de fundo do botão */
-    color: #fff;
+    background-color: var(--corduroy-800); /* Cor de fundo do botão */
+    color: var(--corduroy-50);
     border: none;
     cursor: pointer;
-    z-index: 9999; /* Garante que o botão fique acima do sidebar */
-    padding: 10px; /* Adiciona preenchimento interno ao botão */
-    border-radius: 50%; /* Torna o botão circular */
-    transition: background-color 0.3s; /* Adiciona uma transição suave para a cor de fundo */
+    z-index: 9999;
+    padding: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
 }
+
 .sidebar {
-    background-image: linear-gradient(to right,#290b47, #453fc3);;
-    color: #fff;
+    background-image: linear-gradient(to right, var(--corduroy-900), var(--corduroy-700));
+    color: var(--corduroy-50);
     width: 250px;
     position: fixed;
     top: 0;
     left: 0px;
     height: 100vh;
-    padding-top: 50px; /* Espaçamento para evitar que os itens fiquem sob o cabeçalho */
+    padding-top: 50px;
     z-index: 1000;
     transition: transform 1.8s ease;
+    overflow-y: auto;
 }
 
-
-
-
-#nametitle{
-    margin-top: -30px;
-    margin-bottom: 50px;
+#nametitle {
+    margin-top: 15px;
     margin-left: 20px;
     font-size: medium;
-    
 }
+
 .sidebar ul {
     list-style: none;
     padding: 0;
 }
+
 .sidebar img {
     width: 210px;
     height: 210px;
@@ -56,7 +70,7 @@ body {
 .sidebar ul li {
     padding: 10px 20px;
     margin-bottom: 20px;
-    border: 2px solid #ffffff;
+    border: 2px solid var(--corduroy-50);
     margin-left: 10px;
     margin-right: 10px;
     border-radius: 15px;
@@ -64,177 +78,194 @@ body {
 
 .sidebar ul li a {
     text-decoration: none;
-    color: #fff;
-    
+    color: var(--corduroy-50);
 }
+
 header {
-    background-image: linear-gradient(to right,#290b47, #453fc3);
+    background-image: linear-gradient(to right, var(--corduroy-900), var(--corduroy-700));
     padding: 10px;
     text-align: center;
-    margin-left: 250px; 
+    margin-left: 250px;
     border-radius: 0px 0px 18px 18px;
-    color: #fff;
+    color: var(--corduroy-50);
 }
+p {
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte */
+    line-height: 1.6; /* Ajusta o espaçamento entre as linhas */
+}
+
 header nav ul {
     list-style: none;
     padding: 0;
-    text-align: center; /* Centraliza os itens */
+    text-align: center;
 }
 
 header nav ul li {
-    display: inline; /* Exibe os itens na mesma linha */
-    margin: 0 10px; /* Adiciona espaço entre os itens */
+    display: inline;
+    margin: 0 10px;
 }
 
 header nav ul li a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--corduroy-50);
     font-weight: bold;
-    border: 2px solid #ffffff;
+    border: 2px solid var(--corduroy-50);
     border-radius: 12px;
     padding: 10px;
 }
 
-
 div {
-    border: 2px solid #290b47;
+    border: 2px solid var(--corduroy-900);
     margin-bottom: 5px;
     border-radius: 10px;
 }
-
+div.nesteddiv {
+    border: 2px solid var(--corduroy-900);
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 10px;
+    border-radius: 10px;  
+}
 div p {
     align-items: center;
     margin-left: 50px;
 }
-h2{
+
+h2 {
     margin-left: 5px;
     text-decoration: underline;
 }
-h3{
+
+h3, h4 {
     margin-left: 10px;
 }
 
 .content {
     padding: 20px;
 }
+.content > div {
+    margin-bottom: 20px; /* Adiciona espaço entre as divs */
+}
+
 section.content, footer {
     margin-left: 250px;
     margin-bottom: -14px;
 }
+
 footer {
-    border-radius: 18px 18px 0px 0px ;
-    margin-left: 250px; /* Ajusta a margem esquerda para garantir que o conteúdo comece após o término do sidebar */
+    border-radius: 18px 18px 0px 0px;
+    margin-left: 250px;
     padding: 20px;
-    background-image: linear-gradient(to right,#290b47, #453fc3);
-    color: #fff;
-    display: flex; /* Adiciona display flex para alinhar itens horizontalmente */
-    justify-content: center; /* Centraliza horizontalmente os itens */
-    align-items: center; /* Centraliza verticalmente os itens */
+    background-image: linear-gradient(to right, var(--corduroy-900), var(--corduroy-700));
+    color: var(--corduroy-50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 50px;
 }
 
 footer ul {
     list-style: none;
     padding: 0;
-    margin: 0; /* Remova qualquer margem padrão */
-    display: flex; /* Adiciona display flex para alinhar itens horizontalmente */
+    margin: 0;
+    display: flex;
 }
 
 footer ul li {
-    margin-right: 10px; /* Adiciona um espaçamento entre os itens */
+    margin-right: 10px;
     padding: 10px;
     border-radius: 15px;
-    border: 2px solid #ffffff;
+    border: 2px solid var(--corduroy-50);
 }
 
 footer ul li:last-child {
-    margin-right: 0; /* Remove a margem direita do último item */
+    margin-right: 0;
 }
-
 
 ul {
     list-style-type: none;
-    
 }
 
-li:hover{
-    background-color: #ffffff77;
+li:hover {
+    color: var(--corduroy-950);
+    background-color: var(--corduroy-100);
     cursor: pointer;
-    
 }
 
 .contact {
     margin-top: 10px;
 }
 
-
 /* Responsividade para telas menores */
 @media only screen and (max-width: 600px) {
     .sidebar ul {
-        display: flex; /* Altera o display para flex para alinhar os itens horizontalmente */
-        flex-direction: column; /* Muda a direção da flexbox para coluna para que os itens sejam empilhados verticalmente */
-        align-items: center; /* Centraliza os itens horizontalmente */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .sidebar ul li {
-        width: auto; /* Define a largura automática para que os itens ocupem apenas a largura do conteúdo */
-        margin: 10px 0; /* Adiciona margem entre os itens */
+        width: auto;
+        margin: 10px 0;
         margin-bottom: 50px;
     }
 
     .sidebar img {
-        margin: 0 auto; /* Centraliza a imagem horizontalmente */
-        display: block; /* Garante que a imagem não seja esticada */
+        margin: 0 auto;
+        display: block;
     }
 
     header {
-        margin-left: 20px; /* Remove a margem esquerda */
+        margin-left: 20px;
         margin-right: 20px;
     }
 
     section.content, footer {
-        margin-left: 0; /* Remove a margem esquerda */
+        margin-left: 0;
     }
 
     footer ul {
-        justify-content: space-around; /* Distribui os itens igualmente ao longo do espaço disponível */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0;
+        list-style: none;
     }
 
     footer ul li {
-        margin-right: 30px; /* Aumenta a margem direita entre os itens */
-        margin-bottom: 12px; /* Aumenta a margem inferior entre os itens */
+        margin: 12px 0;
         padding: 10px;
-        border: none;
+        border: 2px solid var(--corduroy-50);
         font-size: smaller;
-        margin-inline-start: 12px;
-        border: 2px solid #ffffff;
+        text-align: center;
     }
-    #toggleBtn{
+
+    #toggleBtn {
         display: flex;
-        
     }
-    .sidebar #open_btn_icon{
+
+    .sidebar #open_btn_icon {
         transform: rotate(-180deg);
     }
-    .sidebar.open #open_btn_icon{
+
+    .sidebar.open #open_btn_icon {
         transform: none;
     }
+
     .sidebar.open {
-        
         transition: transform 1.8s ease;
-        left: -235px; /* Mostra o sidebar */
+        left: -235px;
     }
+
     #open_btn_icon {
         transition: transform 0.8s ease;
-        
     }
-    #nametitle{
+
+    #nametitle {
         margin-top: 0px;
         margin-bottom: 50px;
         margin-left: 20px;
         font-size: medium;
-        
     }
 }
-
-
