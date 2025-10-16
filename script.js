@@ -11,11 +11,20 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const toggleBtn = document.getElementById('toggleBtn'); // Obtém o botão de alternância
-    const sidebar = document.querySelector('.sidebar'); // Obtém o sidebar
+    const toggleBtn = document.getElementById('toggleBtn');
+    const sidebar = document.querySelector('.sidebar');
 
-    // Adiciona um evento de clique ao botão de alternância
     toggleBtn.addEventListener('click', function() {
-        sidebar.classList.toggle('open'); // Alterna a classe 'open' no sidebar
+        sidebar.classList.toggle('open');
+    });
+
+    // Close sidebar when clicking on menu items on mobile
+    const liElements = document.querySelectorAll('.sidebar ul li');
+    liElements.forEach(function(li) {
+        li.addEventListener('click', function() {
+            if (window.innerWidth <= 768) {
+                sidebar.classList.remove('open');
+            }
+        });
     });
 });
