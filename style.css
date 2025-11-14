@@ -10,6 +10,11 @@
     --corduroy-800: #323d38;
     --corduroy-900: #2d3431;
     --corduroy-950: #171c1a;
+    /* Typography */
+    --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    --font-heading: 'Poppins', 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+    --text-color: var(--corduroy-950);
+    --muted-color: #5b6b66;
 }
 
 * {
@@ -21,7 +26,7 @@ html {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--font-sans);
     margin: 0;
     padding: 0;
     background-image: repeating-linear-gradient(to top, var(--corduroy-200), var(--corduroy-400), var(--corduroy-600));
@@ -46,6 +51,7 @@ body {
 #toggleBtn:hover {
     background-color: var(--corduroy-700);
     transform: scale(1.1);
+
 }
 
 .sidebar {
@@ -95,7 +101,7 @@ body {
     transition: all 0.3s ease;
     cursor: pointer;
 }
-
+.contato,
 .sidebar ul li a {
     text-decoration: none;
     color: var(--corduroy-50);
@@ -115,9 +121,37 @@ header {
     display: none;
 }
 p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: var(--corduroy-950);
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+    font-family: var(--font-heading);
+    color: var(--corduroy-900);
+    margin-top: 0.35rem;
+}
+
+h1 {
+    font-size: 2.75rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.05;
+}
+.header-txt {
+    color:white
+}
+
+h2 {
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 header nav ul {
@@ -133,8 +167,9 @@ header nav ul li {
 
 header h1 {
     margin: 10px 0;
-    font-size: 2.5rem;
+    font-size: 2.75rem;
     font-weight: 700;
+    font-family: var(--font-heading);
 }
 
 header nav ul li a {
@@ -242,6 +277,14 @@ footer ul li a {
     text-decoration: none;
 }
 
+footer ul li:hover a {
+    color: black; /* Garante que o texto do link mude de cor quando o cursor estiver sobre o li */
+}
+
+.contato a:hover {
+    color: black; /* Define a cor preta para o texto ao passar o mouse */
+}
+
 footer ul li:last-child {
     margin-right: 0;
 }
@@ -250,7 +293,8 @@ ul {
     list-style-type: none;
 }
 
-li:hover {
+
+ul li:hover {
     color: var(--corduroy-950);
     background-color: var(--corduroy-100);
     cursor: pointer;
@@ -527,4 +571,48 @@ li:hover {
         font-size: 0.55rem;
         padding: 4px 8px;
     }
+}
+
+/* Estilo para links de projeto com ícone */
+.project-link {
+    color: var(--corduroy-900);
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.project-link i.fa-github,
+.project-link i.fab,
+.project-link i.fa-brands {
+    font-size: 1rem;
+    color: var(--corduroy-900);
+}
+
+/* --------- Visual depth & border removal for content blocks --------- */
+/* Remove bordas das divs que contém textos e aumentar profundidade visual */
+.content > div,
+.content > div > div,
+.content .nesteddiv {
+    /* remove borda herdada do seletor genérico `div` */
+    border: none;
+    background-color: rgba(255, 255, 255, 0.92); /* ligeiramente mais sólido para contraste */
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(16,24,32,0.18);
+}
+
+.content > div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 22px 48px rgba(16,24,32,0.22);
+}
+
+.content .nesteddiv {
+    margin-left: 25px;
+    margin-right: 25px;
+    box-shadow: 0 8px 26px rgba(16,24,32,0.12);
+}
+
+/* Ajuste para telas pequenas (evitar efeitos exagerados em touch) */
+@media (hover: none) and (pointer: coarse) {
+    .content > div:hover { transform: none; box-shadow: 0 10px 30px rgba(16,24,32,0.18); }
 }
