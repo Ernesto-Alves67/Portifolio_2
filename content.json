@@ -18,8 +18,8 @@
   "sobre": {
     "h2": "Sobre Mim",
     "h3_1": "Ernesto Alves dos Santos, 25 anos.",
-    "p_1": "Curiosidade é o meu ponto forte. Tenho agonia de não entender algo de fato. Gosto de ver as coisas funcionando como deveriam. Por isso tento dar o meu melhor a cada dia. Todo dia é uma oportunidade de ser melhor.",
-    "h3_2": "Futuro Cientista da Computação",
+    "p_1": "Sou Desenvolvedor de Software, estudante de Ciências da Computação movido pela curiosidade técnica e busca pela excelência. Minha motivação é construir soluções que não apenas funcionam, mas que são robustas, bem arquitetadas e eficientes.",
+    "h3_2": "50% Cientista da Computação",
     "bio": "Atualmente cursando o 6º período de Ciências da Computação pela Universidade Federal de Catalão."
   },
   "educacao": {
@@ -36,9 +36,9 @@
   },
   "skills": {
     "h2": "Skills",
-    "p_1": "Entretanto apreder coisas novas não é problema para mim. Pois consigo assimilar conteúdos novos muito rápido.",
+    "p_1": "Comunicação, Trabalho em equipe, Resolução de problemas, Adaptabilidade, Pensamento crítico e boa leitura de código. <br> Assimilo rapidamente novas linguagens de programação e frameworks, garantindo adaptação imediata aos desafios do projeto.",
     "interesses_h2": "Interesses",
-    "interesses_p": "Meu passatempo favorito é desenvolver softwares desktop e mobile. Mas também me fascino por um backend seguro. Sou apaixonado em saber como certas coisas funcionam, quero aprender como tudo funciona. Busco poder implementar várias das minhas ideias malucas, e saber por que funcionam ou não. Quero poder me aperfeiçoar em desenvolvimento de software, de modo a vir no futuro abrir minha própria fábrica de software. Em contraponto quero dominar cada vez mais a matemática. Viso poder contribuir significativamente para a área."
+    "interesses_p": "Meu foco principal é o desenvolvimento full-stack, com grande interesse em arquitetura de Backend seguro e escalável e desenvolvimento Mobile Nativo (Android). Busco dominar as melhores práticas de Engenharia de Software e contribuir com soluções inovadoras e de alto impacto."
   },
   "projetos": {
     "h2": "Projetos",
