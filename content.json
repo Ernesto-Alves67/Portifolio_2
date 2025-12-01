@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "title": "Ernesto's Portfólio",
+    "description": "Portfólio de Ernesto Alves - Estudante de Ciências da Computação"
+  },
+  "nav": {
+    "sobre": "Sobre Mim",
+    "educacao": "Educação",
+    "experiencia": "Experiência",
+    "skills": "Skills & Interesses",
+    "projetos": "Projetos",
+    "contact": "Contato"
+  },
+  "header": {
+    "title": "Desenvolvedor de Software <br> Android, Desktop, Backend",
+    "profileAlt": "Ernesto Alves"
+  },
+  "sobre": {
+    "h2": "Sobre Mim",
+    "h3_1": "Ernesto Alves dos Santos, 25 anos.",
+    "p_1": "Sou Desenvolvedor de Software, estudante de Ciências da Computação movido pela curiosidade técnica e busca pela excelência. Minha motivação é construir soluções que não apenas funcionam, mas que são robustas, bem arquitetadas e eficientes.",
+    "h3_2": "50% Cientista da Computação",
+    "bio": "Atualmente cursando o 6º período de Ciências da Computação pela Universidade Federal de Catalão."
+  },
+  "educacao": {
+    "h2": "Formação Acadêmica",
+    "h3_1": "Ensino Médio Completo",
+    "p_1": "Duração: 2016-2018  <br> Situação: Concluído. </br>",
+    "h3_2": "Ciências da Computação - Universidade Federal de Catalão (UFCAT)",
+    "p_2": "Carga Horária: 3224 hrs\nTitulação: Bacharel\nSituação: Em andamento\nPrevisão de conclusão: 2º semestre 2027"
+  },
+  "experiencia": {
+    "h2": "Experiência",
+    "h3_1": "Desenvolvedor Mobile Full Stack Jr. - Cafezinho App",
+    "p_1": "Desenvolvimento de aplicações mobile Android utilizando Kotlin e Java. Consumo de APIs RESTful, integração com bancos de dados MySQL e Firebase. Implementação de interfaces responsivas e adaptativas para diferentes tamanhos de tela. Colaboração em equipes ágeis utilizando Git para controle de versão."
+  },
+  "skills": {
+    "h2": "Skills",
+    "p_1": "Comunicação, Trabalho em equipe, Resolução de problemas, Adaptabilidade, Pensamento crítico e boa leitura de código. <br> Assimilo rapidamente novas linguagens de programação e frameworks, garantindo adaptação imediata aos desafios do projeto.",
+    "interesses_h2": "Interesses",
+    "interesses_p": "Meu foco principal é o desenvolvimento full-stack, com grande interesse em arquitetura de Backend seguro e escalável e desenvolvimento Mobile Nativo (Android). Busco dominar as melhores práticas de Engenharia de Software e contribuir com soluções inovadoras e de alto impacto."
+  },
+  "projetos": {
+    "h2": "Projetos",
+    "reddit_title": "RedditClone (Android)",
+    "reddit_p": "Aplicação Mobile Android desenvolvida para entender a criação de layouts complexos e responsivos. Bem como o consumo de APIs REST. Projeto open-source disponível no GitHub.",
+    "reddit_url": "https://github.com/Ernesto-Alves67/RedditClone",
+    "horarios_title": "Horários (Android)",
+    "horarios_p": "Visualizador de grade horaria das disciplinas da Universidade Federal de Catalão (UFCAT).",
+    "horarios_url": "https://github.com/Ernesto-Alves67/horarios",
+    "indexbackend_title": "Index Backend (API)",
+    "indexbackend_p": "API REST desenvolvida em JavaScript para o aplicativo Index. <br> -> Implementa SOCKET.IO para comunicação em tempo real. <br> -> Autenticação de usuários e gerenciamento de sessões.",
+    "indexbackend_url": "https://discord.gg/8KFnspZQe8",
+    "docviewer_title": "DocViewer (Desktop)",
+    "docviewer_p": "Editor de texto desktop que permite a escrita e visualização de documentos em Markdown. Crie templates personalizados e use quando quiser. Ferramenta completa para uma boa escrita em Markdown. Dê um up em suas documentações!",
+    "docviewer_url": "https://github.com/ScherzoLambda/DocViewer",
+    "ytd_title": "YTDownloader (Desktop)",
+    "ytd_p": "Aplicação que permite buscas e download de vídeos do YouTube. #PiracyNeverDies"
+    ,"ytd_url": "https://github.com/Ernesto-Alves67/YoutubeDownloader_"
+  },
+  "footer": {
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  }
+}
